@@ -2,28 +2,25 @@ import datetime
 
 
 class Time():
-
+   """A class to import time and get hours, minutes and seconds"""    
+    
     def get_secs():
-
         x = datetime.datetime.now() 
         time = x.strftime("%X")
-        # Provides hours mins 
+        # Slices to seconds
         secs = time [6:9]
         return(secs)
 
     def get_mins():
-
         x = datetime.datetime.now() 
         time = x.strftime("%X")
-        # Provides hours mins 
+        # Slices to minutes
         mins = time[3:5]
         return(mins)
 
     def get_hours():
         x = datetime.datetime.now() 
         time = x.strftime("%X")
-        # Provides hours mins 
+        # Slices to hours 
         hours = time[0:2]
         return(hours)
-
-clock =Time()
